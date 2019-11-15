@@ -3,7 +3,7 @@ region = "us-east-1"
 }
 resource "aws_instance" "example" {
 ami = data.aws_ami.amazon_linux_latest.id
-instance_type = "t2.micro"
+instance_type = "t2.small"
 tags = {
 Name = "Module 3 Lab 1"
 User = "lab-user-X"
